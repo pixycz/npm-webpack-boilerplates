@@ -12,7 +12,7 @@ Zdrojové soubory, které se mají zkompilovat na výstup do `/dist`
 - `index.js` – základní JS, do kterého se importují další JS z `/js` a kompiluje se do `/dist/js/bundle.js`
 - `js/` – složky se skripty
 - `sass/` – složka se styly
--- `sass/index.scss` – základní styl, do nějž se importují ostatní styly a zkompiluje se do `/dist/css/style.css`. Může být i jako `/src/index.scss` apod.
+    - `sass/index.scss` – základní styl, do nějž se importují ostatní styly a zkompiluje se do `/dist/css/style.css`. Může být i jako `/src/index.scss` apod.
 - `img/` – složka s obrázky, které se importují do JS a kompilují se do `/dist/img/*`
 - podobně `media/`, `fonts/` atd.
 
@@ -30,10 +30,10 @@ Obsahuje zkompilované soubory. V zásadě by se měla dát v téhle podobě um�
 ## Skripty
 
 - `dev` – spustí lokální server
--- volitelně na https
--- dostupný na `localhost:` i na `http://0.0.0.0` (adresa počítače v rámci LAN)
--- watch a hot-reload při každém uložení souboru
--- negeneruje žádné nové soubory do složky projektu (skrytá kompilace)
+    - volitelně na https
+    - dostupný na `localhost:` i na `http://0.0.0.0` (adresa počítače v rámci LAN)
+    - watch a hot-reload při každém uložení souboru
+    - negeneruje žádné nové soubory do složky projektu (skrytá kompilace)
 - `build` – zkompiluje projekt do `/dist`
--- volitelně se vytvoří mapy JS a CSS bundlů
--- volitelně se minifikuje/uglifikuje
+    - volitelně se vytvoří mapy JS a CSS bundlů
+    - volitelně se minifikuje/uglifikuje
