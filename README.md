@@ -1,1 +1,5 @@
-# webpack_demo
+# Šablony pro typické npm/webpack projekty
+
+Vzorové konfigurace několika typických projektů, které se mají procesovat pomocí *npm* a *webpack*. Vybral jsem 4 nejčastější typy projektů, se kterými jsem se v posledních dvou letech setkal a jejichž npm/webpack konfigurace jsem flikoval a slepoval, jak se dalo. Většinou to "nějak" funguje, někdy víceméně použitelně, častěji s nějakými mouchami a nedostatky. Ale prakticky bez výjimky je to dále nereprodukovatelné – pokus použít stejnou konstrukci jinde vždy skončí chybami v npm už na úrovni instalace a intuitivně cítím, že ani jedna z těch konfigurací není úplně správná.
+
+Cílem této snahy má být vytvořit nastavení *npm* (tj. vzorový `package.json`) a *webpacku* (tj. vzorový `webpack.config.js`) pro každý z uvedených typů projektů tak, aby fungovaly právě tak, jak je v zadání požadováno, a přitom byly přímočaré, korektní, bez chyb a zbytečných hacků – a aby byly znovupoužitelné jako šablony pro nové projekty. Když budu potřebovat vytvořit menší web, abych si zkopíroval šablonu projektu č. 3, spustil `npm i` a `npm run dev` a rovnou mohl začít vyvíjet.
