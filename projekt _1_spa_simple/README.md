@@ -4,6 +4,8 @@ Základní obecný Single-Page App projekt.
 
 ## Obsah složky projektu
 
+Příklad typického obsahu složky projektu, a jak má následně vypadat výstup zkompilovaný do `/dist`.
+
 ### Složka `/src`
 
 Zdrojové soubory, které se mají zkompilovat na výstup do `/dist`
@@ -32,7 +34,7 @@ Obsahuje zkompilované soubory. V zásadě by se měla dát v téhle podobě um�
 - `dev` – spustí lokální server
     - volitelně na https
     - dostupný na `localhost:` i na `http://0.0.0.0` (adresa počítače v rámci LAN)
-    - watch a hot-reload při každém uložení souboru
+    - watch => kompilace za běhu a hot-reload při každé změně jakéhokoli souboru v `/src`
     - negeneruje žádné nové soubory do složky projektu (skrytá kompilace)
 - `build` – zkompiluje projekt do `/dist`
     - volitelně se vytvoří mapy JS a CSS bundlů
