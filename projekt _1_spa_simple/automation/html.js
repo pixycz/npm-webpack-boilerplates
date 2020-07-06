@@ -34,8 +34,7 @@ function getHtmlHandler (options, minifierOptions = htmlMinifierOptions) {
 
 async function buildHtml (options) {
   log('HTML', 'START')
-  const pattern = `${SRC_PATH}/**/*.html`
-  const files = await glob(pattern)
+  const files = await glob(GLOB_HTML_PATTERN)
   const handleFile = getHtmlHandler(options)
   await Promise.all(files.map(handleFile))
   log('HTML', 'DONE')
@@ -43,5 +42,6 @@ async function buildHtml (options) {
 
 module.exports = {
   getHtmlHandler,
-  buildHtml
+  buildHtml,
+  GLOB_HTML_PATTERN
 }
