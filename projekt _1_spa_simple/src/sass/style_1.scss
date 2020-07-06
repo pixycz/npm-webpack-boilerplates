@@ -1,2 +1,16 @@
 
 /* any scss to be imported and compiled */
+
+// this demonstrates SCSS features
+
+$baseColor: yellow;
+
+body {
+  // variable
+  background: $baseColor;
+
+  // nesting
+  div {
+    border: 1px solid red;
+  }
+}

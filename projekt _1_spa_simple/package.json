@@ -1,0 +1,33 @@
+{
+  "name": "@pixycz/spa-simple",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node ./automation/dev.js --sourcemap --https --environment development",
+    "build": "node ./automation/build.js --minify --sourcemap --environment production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.4.0",
+    "command-line-args": "^5.1.1",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "imagemin-webp": "^6.0.0",
+    "mkdirp": "^1.0.4",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.9",
+    "webpack": "^4.43.0"
+  }
+}

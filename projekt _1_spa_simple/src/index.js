@@ -1,5 +1,8 @@
 
 /* main JS file, all modules to be imported here */
 
-import 'script1' from 'js/script1'
-import 'script2' from 'js/script2'
+import { doSomething } from './js/script_1.js'
+import { doSomethingElse } from './js/script_2.js'
+
+doSomething()
+doSomethingElse()
