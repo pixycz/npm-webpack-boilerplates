@@ -1,2 +1,8 @@
 
 /* any scss to be imported and compiled */
+
+// this demonstrates application of autoprefixer
+
+::placeholder {
+  color: gray;
+}
