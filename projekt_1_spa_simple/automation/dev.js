@@ -45,7 +45,7 @@ async function startWatcher (options) {
   return watcher
 }
 
-(async () => {
+;(async () => {
   log('DEV', 'START')
   const options = getCliArgs()
   if (!options['no-cleanup']) { await cleanup() }
