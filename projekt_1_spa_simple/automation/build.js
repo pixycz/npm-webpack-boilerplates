@@ -5,7 +5,7 @@ module.exports = {
   buildAll
 }
 
-(async () => {
+;(async () => {
   log('BUILD', 'START')
   const options = getCliArgs()
   if (!options['no-cleanup']) { await cleanup() }
