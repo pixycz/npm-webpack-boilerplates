@@ -12,6 +12,8 @@ const glob = promisify(require('glob'))
 const GLOB_SCSS_PATTERN = `${SRC_PATH}/**/*.scss`
 const SCSS_INDEX_PATH = `${SRC_PATH}/sass/index.scss`
 
+const noop = () => {}
+
 function getCssHandler (options) {
   return async (filePath) => {
     log('CSS', filePath)
@@ -34,10 +36,13 @@ function getCssHandler (options) {
         to: outputPath,
         map: options.sourceMap ? { inline: false, prev: sassMap.toString() } : null
       })
-    const { css: prefixedCss, map } = result
+    const { css: prefixedCss, map: postcssMap } = result
 
-    await writeFile(outputPath, prefixedCss)
-    await writeFile(`${outputPath}.map`, map)
+    await Promise.all([
+      writeFile(outputPath, prefixedCss),
+      postcssMap ? writeFile(`${outputPath}.map`, postcssMap) : noop
+    ])
+
   }
 }
 
