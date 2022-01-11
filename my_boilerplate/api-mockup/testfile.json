@@ -1,0 +1,5 @@
+{
+    "msg": "Demo message from mock API",
+    "value": 123,
+    "url": "http://example.com"
+}
